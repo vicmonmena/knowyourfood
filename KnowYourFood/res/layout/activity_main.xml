@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity" >
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:background="#FFF">
+	
+	    <TextView
+	        android:id="@+id/foodBrandTxtView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/foodNameTxtView"
+	        android:layout_below="@+id/foodNameTxtView"
+	        android:layout_marginTop="22dp"
+	        android:hint="@string/food_brand_hint"
+	        android:textSize="14sp" />
+	
+	    <TextView
+	        android:id="@+id/foodNameTxtView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="28dp"
+	        android:hint="@string/food_name_hint"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="20sp" />
+	
+	    <ImageButton
+	        android:id="@+id/glutenImgBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/brandFoodTxtView"
+	        android:layout_below="@+id/brandFoodTxtView"
+	        android:layout_marginTop="28dp"
+	        android:contentDescription="@string/food_icon_gluten_desc"
+	        android:src="@drawable/ic_no_image" />
+	
+	    <TextView
+	        android:id="@+id/foodIngredientsTxtView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/glutenImgBtn"
+	        android:layout_alignRight="@+id/faceImgBtn"
+	        android:layout_below="@+id/faceImgBtn"
+	        android:layout_marginTop="16dp"
+	        android:hint="@string/food_ingredients_hint"
+	        android:minLines="5"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textSize="14sp" 
+	        android:background="#F7F8E0"/>
+
+	    <ImageButton
+	        android:id="@+id/lactosaImgBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/glutenImgBtn"
+	        android:layout_centerHorizontal="true"
+	        android:contentDescription="@string/food_icon_lactosa_desc"
+	        android:src="@drawable/ic_no_image" />
+
+	    <ImageButton
+	        android:id="@+id/faceImgBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/lactosaImgBtn"
+	        android:layout_marginRight="15dp"
+	        android:contentDescription="@string/food_icon_face_desc"
+	        android:src="@drawable/ic_no_image" />
+
+	    <Button
+	        android:id="@+id/addFoodBtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/ingredientsFoodTxtView"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="48dp"
+	        android:drawableLeft="@drawable/ic_add_food"
+	        android:text="@string/add_food_btnlbl" 
+	        android:onClick="addFood"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KnowYourFood</string>
+    <string name="action_info">Info</string>
+    <string name="action_list">Mi lista</string>
+    <string name="action_export">Exportar</string>
+
+    <string name="dialog_done">Hecho</string>
+
+    <!-- Main activity -->
+    <string name="food_name_hint">Alimento</string>
+    <string name="food_brand_hint">Marca</string>
+    <string name="food_ingredients_hint">Ingredientes</string>
+    <string name="food_icon_gluten_desc">Contiene Gluten</string>
+    <string name="food_icon_lactosa_desc">Contiene Lactosa</string>
+    <string name="food_icon_face_desc">Avalado por la FACE</string>
+    
+    <string name="add_food_btnlbl">Añadir a tu lista</string>
+    
+    <string name="dialog_info">Desarrollado por @vicmonmena</string>
+    
+    <!-- FoodListActivity -->
+    <string name="see_details">Ver detalles</string>
+    <string name="dialog_export_info">Esta es la lista de alimentos que has ido haciendo. Si quieres puedes ver la información de cada alimento pulsando encima, elimnar alguno manteniendo pulsado uno o bien pasarle la lista a alguien clicando en Exportar.</string>
+    
+</resources>
