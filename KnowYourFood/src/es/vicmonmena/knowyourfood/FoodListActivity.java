@@ -56,7 +56,7 @@ public class FoodListActivity extends ListActivity {
 
         switch (item.getItemId()) {
         	case R.id.action_export:
-        		Toast.makeText(this, "Bajo construcción", Toast.LENGTH_LONG).show();
+        		Toast.makeText(this, "En construcción", Toast.LENGTH_LONG).show();
         		return true;
         	case R.id.action_info:
         		AlertDialog.Builder builder = new AlertDialog.Builder(this);

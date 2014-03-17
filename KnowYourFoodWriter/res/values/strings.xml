@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">KnowYourFoodWriter</string>
+    <string name="app_name_short">KYF Tag Writer</string>
+
+    <string name="action_info">Info</string>
+    <string name="action_info_text">Info</string>
+    
+    <string name="food_name_hint">Alimento</string>
+    <string name="food_brand_hint">Marca</string>
+    <string name="food_ingredients_hint">Ingredientes</string>
+    <string name="lactosa_lbl">Lactosa</string>
+    <string name="gluten_lbl">Gluten</string>
+    <string name="face_lbl">FACE</string>
+    
+    <string name="write_btn_lbl">Escribir!</string>
+    <string name="title_bl">Introduce los datos del alimento, acerca una etiqueta NFC y pulsa escribir</string>
+    <string name="msg_empty_fields">Rellena todos los campos de texto</string>
+    <string name="msg_tag_written">Se ha grabado su alimento en la etiqueta!</string>
+    
+    
+</resources>

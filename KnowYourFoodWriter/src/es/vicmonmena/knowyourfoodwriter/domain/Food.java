@@ -1,7 +1,7 @@
-package es.vicmonmena.knowyourfood.domain;
+package es.vicmonmena.knowyourfoodwriter.domain;
 
 /**
- * Clase que representa un alimento de la aplicación.
+ * 
  * @author vicmonmena
  *
  */
