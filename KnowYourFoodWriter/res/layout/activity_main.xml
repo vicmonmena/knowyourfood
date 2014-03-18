@@ -27,7 +27,6 @@
         android:layout_marginBottom="5dp"
         android:background="#EEEEEE"
         android:contentDescription="@string/food_name_hint"
-        android:hint="@string/food_name_hint"
         android:padding="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -38,7 +37,6 @@
         android:layout_marginBottom="5dp"
         android:background="#EEEEEE"
         android:contentDescription="@string/food_brand_hint"
-        android:hint="@string/food_brand_hint"
         android:padding="5dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -90,6 +88,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/write_btn_lbl"
-        android:drawableLeft="@drawable/ic_launcher" />
+        android:drawableLeft="@drawable/ic_launcher"
+        android:onClick="onClickButton"/>
 
 </LinearLayout>

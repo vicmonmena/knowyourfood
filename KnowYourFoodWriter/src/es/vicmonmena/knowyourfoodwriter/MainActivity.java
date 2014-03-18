@@ -73,6 +73,10 @@ public class MainActivity extends Activity {
         	return;
         }
         
+        // Rellenamos con los datos de la etiqueta leída
+        pendingIntent = PendingIntent.getActivity(this, 0, new Intent(
+        	this,getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+        
         foodNameEditTxt = (EditText) findViewById(R.id.foodEdit);
         foodBrandEditTxt = (EditText) findViewById(R.id.brandEdit);	
         foodIngredientsEditTxt = (EditText) findViewById(R.id.ingredientsEdit);
@@ -85,14 +89,18 @@ public class MainActivity extends Activity {
     protected void onPause() {
     	super.onPause();
     	Log.d(TAG, "onPause");
-    	nfcAdapter.disableForegroundDispatch(this);
+    	if (nfcAdapter != null) {
+    		nfcAdapter.disableForegroundDispatch(this);
+    	}
     }
 
     @Override
     protected void onResume() {
     	super.onResume();
     	Log.d(TAG, "onResume");
-    	nfcAdapter.enableForegroundDispatch(this, pendingIntent, null, null);
+    	if (nfcAdapter != null) {
+    		nfcAdapter.enableForegroundDispatch(this, pendingIntent, null, null);
+    	}
     }
     
     @Override
